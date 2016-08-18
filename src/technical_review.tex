@@ -1,0 +1,83 @@
+\documentclass{article}
+
+\usepackage[margin=0.5in]{geometry}
+
+
+\begin{document}
+
+\title{Programming Technical Review Notes}
+\author{Mike Micatka}
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+\section{Data Structures}
+
+Comparison of common data structures:
+
+\begin{tabular}{|l|l|l|l|l|l|}
+
+\hline
+
+ & Linked List & Array & Dynamic Array & Balanced Tree & Hashed Array Table \\ \hline 
+ Indexing & & & & & \\ \hline
+ Insert/Delete at Beginning & & & & & \\ \hline
+ Insert/Delete at End & & & & & \\ \hline
+ Insert/Delete at Middle & & & & & \\ \hline
+ Wasted Space (average) & & & & & \\ \hline
+ 
+\end{tabular}
+
+\subsection{Linked Lists}
+
+\subsubsection{Description}
+
+A linear collection of data elements (nodes) that contain contain a pointer to the next node. There are several sub-types of linked lists; singly-linked list, doubly-linked list, mulitiply-linked list, and circular-linked list among others.
+
+\subsubsection{Pros}
+
+\begin{itemize}
+	\item Dynamic, can be grown and pruned during run-time. Easy memory allocation/deallocation
+	
+	\item Node insertion and deletion are easily implemented
+	
+	\item Linear data structures are easily created using linked-lists
+	
+\end{itemize}
+
+\subsubsection{Cons}
+\begin{itemize}
+	\item Use more memory than arrays because of pointers needing to be stored
+	
+	\item Nodes must be read in order so are sequentially accessed
+	
+	\item Nodes are stored incontiguously so have longer access times
+	
+	\item Difficult to navigate backwards (doubly-linked lists are better but require an additional pointer)
+	
+\end{itemize}
+
+\subsubsection{Implementation}
+
+
+\subsection{Binary Trees}
+
+\subsection{Tries}
+
+\subsection{Stacks}
+
+\subsection{Queues}
+
+\subsection{Vectors and Array Lists	}
+
+\subsection{Hash Tables}
+
+\section{Algorithms}
+
+
+\section{Concepts}
+
+
+\end{document}
