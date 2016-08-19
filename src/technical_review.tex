@@ -1,7 +1,7 @@
 \documentclass{article}
 
 \usepackage[margin=0.5in]{geometry}
-
+\usepackage{listings}
 
 \begin{document}
 
@@ -59,7 +59,22 @@ A linear collection of data elements (nodes) that contain contain a pointer to t
 	
 \end{itemize}
 
-\subsubsection{Implementation}
+\subsubsection{Implementation in C++}
+
+\begin{lstlisting}[language=C++, caption={C++ code using listings}]
+struct Node
+{
+	Node* next;
+	int data;
+}
+
+void insert_after(Node* cur_node, Node* new_node)
+{
+	new_node->next = cur_node->next;
+	cur_node->next = new_node;
+}
+
+\end{lstlisting}
 
 
 \subsection{Binary Trees}
